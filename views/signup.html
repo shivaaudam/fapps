@@ -1,0 +1,38 @@
+<div id="LoginScreen" style="width:100%;height:{{height}}px">
+<div ng-show="loading" class="activity-box"><img src="./styles/loader.gif">LOADING...</div>
+	<div class="login-container">
+        <div id="signup">
+            <div class="signup-screen">
+                <div class="space-bot text-center">
+                    <h1>Sign up</h1>
+                </div>
+                <form name="myForm">
+                    <div class="input-field col s6">
+                        <input id="first-name" type="text" name="fname" ng-model="user.firstName" class="validate" required>
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last-name" type="text" name="lname" ng-model="user.lastName" class="validate" required>
+                        <label for="last-name">Last Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="email" type="email" name="email" ng-model="user.email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="password" type="password" name="password" ng-model="user.password" ng-minlength='6' class="validate" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="space-top text-center">
+                        <button type="submit" class="waves-effect waves-light btn done" ng-click="register()">
+                            <i class="material-icons left">done</i>Register
+                        </button>
+                        <button type="button" class="waves-effect waves-light btn cancel" ng-click="reset()">
+                            <i class="material-icons left">clear</i>Reset
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

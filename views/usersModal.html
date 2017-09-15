@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h3 class="modal-title">Create User</h3>
+</div>
+<div class="modal-body">
+    <form ng-submit="ok()">
+        <div class="input-group animated fadeIn">
+            <input type="text" class="form-control" ng-model="username" placeholder="username" autofocus>
+        </div>
+        <div class="input-group animated fadeIn">
+            <input type="text" class="form-control" ng-model="department" placeholder="department" autofocus>
+        </div>
+        <div class="input-group animated fadeIn">
+            <input type="text" class="form-control" ng-model="role" placeholder="role" autofocus>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

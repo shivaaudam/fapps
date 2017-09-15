@@ -1,0 +1,30 @@
+<div id="LoginScreen" style="width:100%;height:{{height}}px">
+<div ng-show="loading" class="activity-box"><img src="./styles/loader.gif">LOADING...</div>
+    <div class="login-container">
+        <div id="signup">
+            <div class="signup-screen">
+                <div class="space-bot text-center">
+                    <h1>Sign In</h1>
+                </div>
+                <form name="myForm" accept-charset="">
+                    <div class="input-field col s6">
+                        <input id="email" type="email" name="email" ng-model="register.user.email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="password" type="password" name="password" ng-model="register.user.password" ng-minlength='6' class="validate" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="space-top text-center">
+                        <button type="submit" class="waves-effect waves-light btn done" ng-click="login()">
+                             Signin
+                        </button>
+                        <button type="button" class="waves-effect waves-light btn cancel" ui-sref="signup">
+                            SignUp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
