@@ -1,2 +1,2 @@
 # fapps
-fasterapps
+HR application for recruitment process.
